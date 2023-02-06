@@ -1,0 +1,86 @@
+.login {
+    text-align: center;
+    height: 60vh;
+    align-items: center;
+    display: flex;
+}
+
+.centered {
+    margin: auto;
+    max-width: 400px;
+}
+
+.loginErrorInfo {
+    font-size: 1rem;
+    color: #ff0000;
+    font-family: ptsans-italic;
+}
+
+.myUserIcon, .myLoockIcon {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    margin-top: -0.5em;
+    right: 23px;
+    width: 0;
+    color: #5c717e;
+}
+
+.inputCont {
+    position: relative;
+}
+
+.myInput {
+    background: #282b33;
+    width: calc(100% - 10px);
+    color: #bbbdd9 ;
+    outline: none ;
+    border-radius: 3px ;
+    height: 40px;
+    font-size: 1.2rem;
+    padding: 10px 0 0 10px;
+}
+
+.myInput:focus , .myInput:focus-visible, .myInput:active {
+    box-shadow: 0 1px 0 #8eb50d;
+}
+
+.inputCont {
+    position: relative;
+    margin: 30px 0;
+}
+
+.myLabel {
+    color: #5c717e;
+    position: absolute;
+    left: 10px;
+    top: calc(50% - 10px);
+    transition: 0.3s;
+    text-align: left;
+}
+
+/* User Focus or fill input label animated top of input */
+.inputCont label:has(+ input:hover) {
+    top: 2px !important;
+    font-size: 12px;
+}
+
+.inputCont label:has(+ input:not(:placeholder-shown)) {
+    top: 2px !important;
+    font-size: 12px;
+}
+
+.loginBtn {
+    background-color: #8eb50d;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 5px;
+}

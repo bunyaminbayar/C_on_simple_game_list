@@ -1,0 +1,97 @@
+body {
+    background-color: #373942;
+    font-family: ptsans-regular;
+}
+
+@font-face {
+    font-family: ptsans-regular;
+    src: url(../fonts/PTSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: ptsans-italic;
+    src: url(../fonts/PTSans-Italic.ttf);
+}
+
+@font-face {
+    font-family: ptsans-bold;
+    src: url(../fonts/PTSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: ptsans-bold-italic;
+    src: url(../fonts/PTSans-BoldItalic.ttf);
+}
+
+.navigation {
+    display: flex;
+}
+
+input {
+    border: none;
+}
+
+input:focus, input:active, input:focus-visible {
+    box-shadow: none;
+    outline: none;
+}
+
+.navLogo {
+    margin: auto;
+    height: 38px;
+    padding-top: 10px;
+}
+
+.main.container {
+    margin: 0 auto;
+    padding: 2em 2em 7em;
+    max-width: 990px;
+}
+
+.field {
+    margin: 10px;
+}
+
+.search {
+    float: right;
+}
+
+.logout  {
+    position: relative;
+}
+
+.myLeftChevron {
+    display: inline-block;
+    width: 10px;
+}
+
+.myLeftChevron svg {
+    position: absolute;
+    left: 11px;
+    top: 10px;
+}
+
+.play {
+    position: relative;
+}
+
+.myRightChevron {
+    display: inline-block;
+    width: 10px;
+}
+
+.myRightChevron svg {
+    position: absolute;
+    right: 8px;
+    top: 10px;
+}
+
+
+/* Media Screen Rulles */
+
+@media only screen and (max-width: 650px){
+    .main.container {
+        margin: 0 auto;
+        padding: 15px;
+    }
+}
